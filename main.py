@@ -28,6 +28,7 @@ async def on_message(message):
 
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
+        print('hello command run')
 
 @client.event
 async def on_message(message):
@@ -36,6 +37,7 @@ async def on_message(message):
 
     if message.content.startswith('bruh'):
         await message.channel.send('bruh urself ugly fatty')
+        print('bruh command run')
 
 async def on_message(message):
     if message.author == client.user:
@@ -43,5 +45,6 @@ async def on_message(message):
 
     if message.content.startswith('$covid'):
         await message.channel.send(response.text[3:-3])
+        print('covid command run')
 
 client.run(token)
